@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>UFO45</title>
+</head>
+<body>
+
+<div class="gameover-scoreboard">
+  <div>
+    <h1>Game Over</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">Loading</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="gamestart-scoreboard">
+  <div>
+    <div style="text-align: center; margin-bottom: 20px;">
+      <img src="ufo-animation.gif">
+    </div>
+
+    <label>Enter your name</label>
+    <input type="text" name="name" style="width: 100%;">
+    <input type="submit" value="PLAY" style="width: 100%;">
+
+    <h1>Top Players</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3">Loading</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+<script src="bundle.js"></script>
+</body>
+</html>

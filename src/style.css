@@ -1,0 +1,78 @@
+html, body{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+* {
+    font-family: "Lucida Console", Courier, monospace;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background: black;
+}
+canvas {
+	background: #29adff;
+}
+.gameover-scoreboard,
+.gamestart-scoreboard {
+	height: 100%;
+	background: transparent;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+  	color: white;
+  	align-items: center;
+    justify-content: center;
+	display: none;
+}
+.gameover-scoreboard {
+	opacity: .6;
+	color: #ff004d;
+	background: #29adff;
+}
+.gameover-scoreboard h1,
+.gamestart-scoreboard h1 {
+	text-align: center;
+}
+.gameover-scoreboard table,
+.gamestart-scoreboard table {
+	width: 100%;
+}
+.gameover-scoreboard p {
+	text-align: center;
+}
+tr.selected {
+	font-weight: bold;
+	animation: color-change 1s infinite;
+}
+@keyframes color-change {
+  0% { color: #ff004d; }
+  50% { color: black; }
+  100% { color: #ff004d; }
+}
+
+.gamestart-scoreboard {
+    display: flex;
+}
+
+.gamestart-scoreboard label {
+	display: block;
+}
+input {
+	padding: 5px;
+	box-sizing : border-box;
+}
+input[type="text"] {
+	margin-bottom: 10px;
+}
+input[type="submit"] {
+	background: #ff004d;
+	border: 1px solid #ff004d;
+	color: white;
+	padding: 10px 0px;
+	font-size: 1.2em;
+}
+.gameover-scoreboard img {
+	margin: auto;
+}
