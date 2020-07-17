@@ -84,7 +84,7 @@ class Game {
   }
 
   startGame() {
-    //window.UFO45.soundTrack.play();
+    window.UFO45.soundTrack.play();
     window.UFO45.gameStarted = true;
   }
 
