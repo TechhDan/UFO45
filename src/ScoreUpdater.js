@@ -6,6 +6,7 @@ export default class ScoreUpdater {
     window.UFO45.player.soundEffect.stop();
     window.UFO45.player.crashSoundEffect.play();
     window.UFO45.soundTrack.stop();
+    window.UFO45.mainscreenSoundtrack.play();
   }
 
   writeScore() {

@@ -22,12 +22,13 @@ class Game {
     this.gameStarted = false;
     this.gameOver = false;
     this.debug = false;
+    this.mainscreenSoundtrack = new Sound('./../media/just-because.mp3');
   }
 
   init() {
     let image = new Image();
     image.src = SpriteSheet;
-    this.soundTrack = new Sound('./../media/soundtrack.mp3');
+    this.soundTrack = new Sound('./../media/UFOAbduction.mp3');
     this.score = new Score();
     this.background = new Background(image);
     this.player = new Player(image);
