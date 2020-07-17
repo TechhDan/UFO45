@@ -10,6 +10,7 @@ import ScoreUpdater from './ScoreUpdater';
 import SplashScreen from './SplashScreen';
 import AbducteeFactory from './AbducteeFactory';
 import Background from './Background';
+import House from './House';
 
 class Game {
 
@@ -35,6 +36,7 @@ class Game {
     this.foreground = new Foreground(image);
     this.CloudEnemies = new CloudEnemies(image);
     this.abducteeFactory = new AbducteeFactory(image);
+    this.house = new House(image);
     this.bushes = [
       new Bushes(image, Math.ceil(Math.random() * window.UFO45.canvas.width)),
       new Bushes(image, Math.ceil(Math.random() * window.UFO45.canvas.width)),
@@ -54,6 +56,13 @@ class Game {
 
     this.clear();
     this.background.update(deltaTime);
+    if (this.house) {
+      if (this.house.x < -this.house.width) {
+        delete this.house;
+      } else {
+        this.house.update(deltaTime);
+      }
+    }
     this.score.update(deltaTime);
     if (this.gameStarted) {
       this.player.update(deltaTime);
@@ -75,7 +84,7 @@ class Game {
   }
 
   startGame() {
-    window.UFO45.soundTrack.play();
+    //window.UFO45.soundTrack.play();
     window.UFO45.gameStarted = true;
   }
 
