@@ -4,4 +4,4 @@ This is side-scroller game created with native JavaScript, PHP, and MySQL. It's 
 
 https://play.google.com/store/apps/details?id=io.techdesign.ufo45
 
-![alt text](https://github.com/TechhDan/UFO45/tree/master/img/game-preview.png?raw=true)
+![alt text](https://raw.githubusercontent.com/TechhDan/UFO45/master/img/game-preview.png)
